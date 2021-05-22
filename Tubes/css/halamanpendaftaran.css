@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+
+.halaman {
+	box-sizing: content-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.halaman .header {
+	background-color: var(--regent-st-blue);
+	height: 209px;
+	width: 1440px;
+	margin-top: -32px;
+}
+:root {
+	--regent-st-blue: rgba(173, 216, 222, 1);
+}
+
+.halaman .header .text-1 {
+	text-align: center;
+	padding-top: 25px;
+}
+.halaman .header .robotoslab-regular-normal-spectra-48px {
+	color: var(--spectra);
+	font-family: "Roboto Slab", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 63px;
+}
+:root {
+	--spectra: rgba(42, 90, 96, 1);
+}
+.halaman .isi .isikiri .tabel {
+	float: left;
+	margin-top: 100px;
+	margin-left: 30px;
+	color: rgba(33, 69, 81, 1);
+	font-family: "Roboto Slab", serif;
+}
+.halaman .isi .isikiri .tabel tr {
+	color: rgba(33, 69, 81, 1);
+	font-size: 18px;
+	font-family: "Roboto Slab", serif;
+	text-decoration: none;
+}
+.halaman .isi .isikiri .tabel .tabelisi {
+	text-decoration: none;
+	list-style: none;
+	color: rgba(33, 69, 81, 1);
+	font-size: 18px;
+	font-family: "Roboto Slab", serif;
+	padding: 10px;
+}
+.halaman .isi .isikiri .tabel tr:hover {
+	background-color: rgba(0, 102, 255, 1);
+}
+.halaman .isi .isikiri .tabel .tabelisi:hover {
+	color: white;
+}
+.halaman .isi .isikiri .tabel .tabelisiwarna {
+	background-color: rgba(0, 102, 255, 1);
+	color: white;
+}
+.halaman .isi .garis {
+	position: absolute;
+	width: 1570px;
+	height: 0px;
+	margin-top: 783px;
+	border: 1.5px solid #9acdd0;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transform: rotate(89.97deg);
+	float: left;
+	margin-left: -520px;
+}
+.halaman .isi .isikanan {
+	float: left;
+	margin-left: 60px;
+	margin-top: 90px;
+}
+
+.halaman .isi .isikanan .isitabelnya {
+	color: rgba(33, 69, 81, 1);
+	font-family: "Roboto Slab", serif;
+	font-size: 24px;
+}
+.halaman .isi .isikanan .kirim {
+	position: absolute;
+	width: 141px;
+	height: 48px;
+	background-color: rgba(0, 102, 255, 1);
+	margin-top: 50px;
+	filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.25));
+	border-radius: 10px;
+	border-color: rgba(0, 102, 255, 1);
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 33px;
+	color: white;
+}
+.halaman .isi .isikanan .kirim:hover {
+	border-color: cyan;
+}
+
+.halaman .isi .isikanan .input {
+	background-color: whitesmoke;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	height: 40px;
+	width: 149px;
+}
+.halaman .isi .isikanan .input {
+	border: 1px solid var(--mountain-mist);
+	margin-bottom: 20px;
+}
+:root {
+	--mountain-mist: rgba(147, 147, 147, 1);
+}
+
+.halaman .isi .isikanan .inputt {
+	background-color: whitesmoke;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	height: 40px;
+	width: 60px;
+}
+.halaman .isi .isikanan .inputt {
+	border: 1px solid var(--mountain-mistt);
+	margin-bottom: 20px;
+}
+:root {
+	--mountain-mistt: rgba(147, 147, 147, 1);
+}
+
+.halaman .footer {
+	float: left;
+}
+
+.halaman .footer .backgroundfooter {
+	background-color: var(--footer);
+	border-radius: 5px;
+	height: 350px;
+	width: 1440px;
+	margin-top: 300px;
+	margin-left: 0px;
+	float: left;
+}
+:root {
+	--footer: rgba(173, 216, 222, 1);
+}
+
+.halaman .footer .backgroundfooter .hubungi {
+	color: rgba(33, 69, 81, 1);
+	font-size: 32px;
+	font-family: "Roboto Slab", serif;
+	margin-left: 60px;
+	padding-top: 20px;
+}
+.halaman .footer .backgroundfooter .telephone {
+	margin-top: 40px;
+	margin-left: 80px;
+	position: absolute;
+}
+
+.halaman .footer .backgroundfooter .nohp1 {
+	margin-left: 130px;
+	position: absolute;
+	margin-top: 35px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman .footer .backgroundfooter .nohp2 {
+	margin-left: 130px;
+	position: absolute;
+	margin-top: 55px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman .footer .backgroundfooter .whattsap {
+	margin-left: 440px;
+	position: absolute;
+	margin-top: 35px;
+}
+.halaman .footer .backgroundfooter .nowaa {
+	margin-left: 490px;
+	position: absolute;
+	margin-top: 45px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman .footer .backgroundfooter .facebook {
+	margin-left: 440px;
+	position: absolute;
+	margin-top: 80px;
+}
+.halaman .footer .backgroundfooter .facebookteks {
+	margin-left: 490px;
+	position: absolute;
+	margin-top: 90px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman .footer .backgroundfooter .igg {
+	margin-left: 440px;
+	position: absolute;
+	margin-top: 125px;
+}
+.halaman .footer .backgroundfooter .igid {
+	margin-left: 490px;
+	position: absolute;
+	margin-top: 135px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman .footer .backgroundfooter .location {
+	margin-left: 810px;
+	position: absolute;
+	margin-top: 40px;
+}
+
+.halaman .footer .backgroundfooter .locationid {
+	margin-left: 850px;
+	position: absolute;
+	margin-top: 40px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}

@@ -1,0 +1,830 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow-x: hidden;
+	width: 1440px;
+}
+
+.halaman-utama {
+	box-sizing: content-box;
+	box-sizing: border-box;
+}
+.halaman-utama .navbar {
+	display: flex;
+	background-color: rgba(173, 216, 222, 1);
+	justify-content: space-around;
+	height: 50px;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+}
+.halaman-utama .navbar .brand {
+	margin-left: 10px;
+}
+
+.halaman-utama .navbar ul {
+	display: flex;
+	list-style: none;
+	width: 40%;
+	justify-content: space-between;
+	font-family: "Roboto Slab", serif;
+	font-weight: 500px;
+	font-size: 20px;
+	margin-left: 35%;
+}
+.halaman-utama .navbar ul li a {
+	text-decoration: none;
+	color: rgba(33, 69, 81, 1);
+}
+
+.halaman-utama .navbar ul li .butt {
+	color: rgba(33, 69, 81, 1);
+	background: rgba(160, 194, 82, 1);
+	padding: 10px 40px;
+	text-decoration: none;
+	border-radius: 0.5em;
+	font-family: "Roboto Slab", serif;
+	border: rgba(160, 194, 82, 1);
+}
+
+.halaman-utama .navbar ul li:hover::after {
+	content: "";
+	display: block;
+	border-bottom: 3px solid blue;
+	width: 30px;
+	margin: auto;
+	padding-bottom: 5px;
+	margin-bottom: -10px;
+}
+.halaman-utama .navbar ul li .active {
+	border-bottom: 3px solid blue;
+	padding-bottom: 5px;
+	margin-bottom: -10px;
+}
+/* menu toggel */
+.halaman-utama .navbar .menu-toggle {
+	display: flex;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
+}
+.halaman-utama .navbar .menu-toggle input {
+	position: absolute;
+	width: 40px;
+	height: 28px;
+	opacity: 0.3;
+	left: -6px;
+	top: -3px;
+	cursor: pointer;
+}
+.halaman-utama .navbar .menu-toggle span {
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: rgba(33, 69, 81, 1);
+	border-radius: 3px;
+	transition: all 0.5s;
+}
+/* animasa */
+
+.halaman-utama .navbar .menu-toggle span:nth-child(2) {
+	transform-origin: 0 0;
+}
+.halaman-utama .navbar .menu-toggle span:nth-child(4) {
+	transform-origin: 0 100%;
+}
+halaman-utama .navbar .menu-toggle input:checked ~ span:nth-child(2) {
+	background-color: red;
+	transform: rotate(45deg) translate(-1px, 0);
+}
+
+halaman-utama .navbar .menu-toggle input:checked ~ span:nth-child(4) {
+	transform: rotate(-45deg) translate(-1px, 0);
+	background-color: white;
+}
+halaman-utama .navbar .menu-toggle input:checked ~ span:nth-child(3) {
+	opacity: 0;
+	transform: scale(0);
+}
+
+@media screen and (max-width: 768px) {
+	.brand img {
+		display: none;
+	}
+	.halaman-utama .navbar {
+		width: 768px;
+	}
+	.halaman-utama .navbar ul {
+		display: flex;
+		font-size: 12px;
+		margin-left: -1350px;
+	}
+	.halaman-utama .navbar ul li {
+		padding-left: 10px;
+	}
+	.halaman-utama .navbar ul li .butt {
+		padding: 5px 10px;
+	}
+}
+@media screen and (max-width: 576px) {
+	/*.halaman-utama .navbar ul {
+		position: absolute;
+		right: 0;
+		flex-direction: column;
+		top: 0;
+		width: 90%;
+		height: 100vh;
+		align-items: center;
+		justify-content: space-evenly;
+		z-index: -1;
+		transform: translateX(100%);
+		transition: all 1s;
+		background-color: rgba(33, 69, 81, 1);
+		opacity: 0;
+	}
+	.navbar-link .menu-toggle {
+		display: flex;
+	}
+	.halaman-utama .navbar .nav-link.slide {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	*/
+
+	.brand img {
+		display: none;
+	}
+	.halaman-utama .navbar {
+		width: 425px;
+	}
+	.halaman-utama .navbar ul {
+		display: flex;
+		margin-left: -800px;
+		font-size: 13px;
+	}
+	.halaman-utama .navbar ul li {
+		padding-left: 15px;
+	}
+	.halaman-utama .navbar ul li .butt {
+		padding: 5px 10px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.brand img {
+		display: none;
+	}
+	.halaman-utama .navbar {
+		width: 425px;
+	}
+	.halaman-utama .navbar ul {
+		display: flex;
+		margin-left: -800px;
+		font-size: 13px;
+	}
+	.halaman-utama .navbar ul li {
+		padding-left: 15px;
+	}
+	.halaman-utama .navbar ul li .butt {
+		padding: 5px 10px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 992px) {
+	.brand img {
+	}
+	.halaman-utama .navbar {
+		width: 992px;
+	}
+	.halaman-utama .navbar ul {
+		display: flex;
+		margin-left: -800px;
+		font-size: 13px;
+	}
+	.halaman-utama .navbar ul li {
+		padding-left: 15px;
+	}
+	.halaman-utama .navbar ul li .butt {
+		padding: 5px 10px;
+	}
+}
+
+.halaman-utama #main {
+	width: 1440px;
+	background: url("../img/landingpage1.png");
+	background-size: cover;
+	position: relative;
+	z-index: -1;
+}
+.halaman-utama #main .container {
+	padding: 3rem 2rem;
+}
+.halaman-utama #main img {
+	position: relative;
+}
+.halaman-utama #main .container .main-content {
+	display: flex;
+}
+.halaman-utama #main .container .main-content .text {
+	padding-top: 12px;
+}
+.halaman-utama #main .container .main-content .text img {
+	height: 60px;
+	width: 800px;
+	margin-bottom: -20px;
+}
+
+.halaman-utama #main .container .main-content .text h1 {
+	color: rgba(33, 69, 81, 1);
+	font-size: 32px;
+	font-family: "Roboto Slab", serif;
+}
+.halaman-utama #main .container .banner {
+	margin-top: 10px;
+	margin-left: 0px;
+	float: right;
+}
+.halaman-utama #main .container .banner img {
+	width: 550px;
+}
+.halaman-utama #main .container .sosmet {
+	margin-top: 330px;
+	display: flex;
+}
+.halaman-utama #main .container .sosmet img {
+	height: 35px;
+	left: 10px;
+	top: 9px;
+	width: 39px;
+}
+
+.halaman-utama #main .container .sosmet .fb {
+	margin-left: 10px;
+}
+.halaman-utama #main .container .sosmet .ig {
+	margin-left: 10px;
+}
+.halaman-utama #content {
+	height: 1024;
+	width: 1440px;
+}
+.halaman-utama #content .contain {
+	height: 1024;
+	width: 1440px;
+}
+.halaman-utama #content .contain .batang {
+	background-color: var(--fountain-blue);
+	height: 30px;
+	width: 1440px;
+}
+:root {
+	--fountain-blue: rgba(99, 181, 192, 1);
+}
+.halaman-utama #content .contain .batang2 {
+	background-color: var(--viking);
+	height: 30px;
+	width: 1200px;
+}
+:root {
+	--viking: rgba(110, 199, 211, 1);
+}
+
+.halaman-utama #content .contain .batang3 {
+	background-color: var(--spray);
+	height: 30px;
+	width: 1050px;
+}
+:root {
+	--spray: rgba(123, 225, 239, 1);
+}
+
+.halaman-utama #content .contain .retangle {
+	height: 300px;
+	width: 500px;
+	background: url("../img/tkm.png");
+	background-size: cover;
+	border-radius: 20px;
+	margin-top: 150px;
+	margin-left: 150px;
+	margin-bottom: 100px;
+	position: relative;
+	z-index: -1;
+}
+
+.halaman-utama #content .contain .title {
+	margin-top: -400px;
+	margin-left: 650px;
+	color: rgba(33, 69, 81, 1);
+	font-family: "Roboto Slab", serif;
+}
+.halaman-utama #content .contain .title .profile {
+	font-size: 42px;
+	margin-left: 25px;
+}
+.halaman-utama #content .contain .title .intro {
+	font-size: 21px;
+	margin-left: 20px;
+}
+.halaman-utama #content .contain .lanjutprofile {
+	margin-left: 1050px;
+}
+
+.halaman-utama #guru {
+	height: 1024;
+	width: 1440px;
+}
+.halaman-utama #guru .contenguru {
+	height: 1024;
+	width: 1440px;
+}
+
+.halaman-utama #guru .contenguru .batang4 {
+	background-color: var(--fountain-blue);
+	height: 30px;
+	width: 1440px;
+	border-top: 900px;
+}
+:root {
+	--fountain-blue: rgba(99, 181, 192, 1);
+}
+
+.halaman-utama #guru .contenguru .batang5 {
+	background-color: var(--viking);
+	height: 30px;
+	width: 1248px;
+	float: right;
+}
+:root {
+	--viking: rgba(110, 199, 211, 1);
+}
+
+halaman-utama #guru .contenguru .batang6 {
+	background-color: var(--spray);
+	height: 30px;
+	width: 1093px;
+	float: right;
+}
+:root {
+	--spray: rgba(123, 225, 239, 1);
+}
+
+.halaman-utama #guru .contenguru .isiguru .gurup {
+	margin-top: 150px;
+	margin-left: 100px;
+	color: rgba(33, 69, 81, 1);
+	font-family: "Roboto Slab", serif;
+}
+.halaman-utama #guru .contenguru .isiguru .isigurukiri {
+	float: left;
+}
+
+.halaman-utama #guru .contenguru .isiguru .isigurukiri .contenguruu1 {
+	background-color: var(--bittersweet);
+	border-radius: 20px;
+	height: 150px;
+	width: 650px;
+	margin-left: 50px;
+}
+:root {
+	--bittersweet: rgba(254, 120, 120, 1);
+}
+.halaman-utama #guru .contenguru .isiguru .isigurukiri .contenguruu2 {
+	background-color: var(--bittersweett);
+	border-radius: 20px;
+	height: 150px;
+	width: 650px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+:root {
+	--bittersweett: rgba(245, 216, 114, 1);
+}
+
+.halaman-utama #guru .contenguru .isiguru .isigurukiri .contenguruu1 .satu {
+	color: rgba(33, 69, 81, 1);
+	font-family: "Roboto Slab", serif;
+	font-size: 15px;
+	margin-top: 0px;
+	margin-left: 200px;
+	padding-top: 20px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukiri
+	.contenguruu1
+	.satu
+	.nama {
+	margin-left: 115px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukiri
+	.contenguruu1
+	.satu
+	.alamat {
+	margin-left: 106px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukiri
+	.contenguruu1
+	.satu
+	.pendidikan {
+	margin-left: 76px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukiri
+	.contenguruu1
+	.satu
+	.jabatan {
+	margin-left: 101px;
+}
+.halaman-utama #guru .contenguru .isiguru .isigurukiri .contenguruu2 .dua {
+	color: rgba(33, 69, 81, 1);
+	font-family: "Roboto Slab", serif;
+	font-size: 15px;
+	margin-top: 0px;
+	margin-left: 200px;
+	padding-top: 20px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukiri
+	.contenguruu2
+	.dua
+	.nama {
+	margin-left: 115px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukiri
+	.contenguruu2
+	.dua
+	.alamat {
+	margin-left: 106px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukiri
+	.contenguruu2
+	.dua
+	.pendidikan {
+	margin-left: 76px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukiri
+	.contenguruu2
+	.dua
+	.jabatan {
+	margin-left: 101px;
+}
+.halaman-utama #guru .contenguru .isiguru .isigurukanan {
+	float: left;
+}
+
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group
+	.group-115 {
+	align-items: flex-start;
+	display: flex;
+	height: 35px;
+	justify-content: flex-end;
+	min-width: 328px;
+	padding: 0 2px;
+	top: 21px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group
+	.group-115
+	.overlap-group1
+	.loudspeaker-128x128-2 {
+	height: 35px;
+	left: 277px;
+	object-fit: cover;
+	top: 0px;
+	width: 40px;
+	margin-left: 0px;
+	margin-top: -65px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group {
+	height: 920px;
+	width: 491px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group
+	.group-115
+	.overlap-group1 {
+	height: 35px;
+	margin-top: -295px;
+	width: 317px;
+}
+.halaman-utama #guru .contenguru .isiguru .isigurukanan .pengumuman- {
+	align-items: flex-start;
+	display: flex;
+	width: 495px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group
+	.group-115
+	.overlap-group1
+	.pengumuman-1 {
+	height: 35px;
+	width: 282px;
+	margin-left: -95px;
+	margin-top: -25 px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group
+	.rectangle-1 {
+	background-color: var(--regent-st-blue);
+	border-radius: 15px;
+	height: 500px;
+	left: 41px;
+	top: 26px;
+	width: 450px;
+	margin-left: 120px;
+	margin-top: -65px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group
+	.rectangle-108 {
+	background-color: var(--jonquil);
+	border-radius: 20px;
+	height: 86px;
+	left: 0px;
+	top: 0px;
+	width: 349px;
+	margin-left: 70px;
+	margin-top: -500px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group
+	.text-1 {
+	letter-spacing: 0px;
+	text-decoration: underline;
+	width: 372px;
+	margin-top: 100px;
+}
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group
+	.text-2 {
+	left: 92px;
+	letter-spacing: 0px;
+	text-decoration: underline;
+	top: 270px;
+	width: 377px;
+}
+
+.halaman-utama
+	#guru
+	.contenguru
+	.isiguru
+	.isigurukanan
+	.pengumuman-
+	.overlap-group
+	.robotoslab-normal-blue-dianne-22px {
+	color: var(--blue-dianne);
+	font-family: "Roboto Slab", Helvetica;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	margin-left: 150px;
+	margin-top: 30px;
+}
+:root {
+	--blue-dianne: rgba(33, 69, 81, 1);
+	--jonquil: rgba(240, 255, 151, 1);
+	--regent-st-blue: rgba(173, 216, 222, 1);
+}
+.halaman-utama #guru .contenguru .lanjutguru {
+	margin-left: 500px;
+	margin-top: -600px;
+	float: left;
+}
+
+.halaman-utama #info .isi-info .batang7 {
+	background-color: var(--fountain-blue);
+	height: 30px;
+	width: 1440px;
+	margin-top: 600px;
+}
+:root {
+	--fountain-blue: rgba(99, 181, 192, 1);
+}
+.halaman-utama #info .isi-info .batang8 {
+	background-color: var(--viking);
+	height: 30px;
+	width: 1200px;
+}
+:root {
+	--viking: rgba(110, 199, 211, 1);
+}
+
+.halaman-utama #info .isi-info .batang9 {
+	background-color: var(--spray);
+	height: 30px;
+	width: 1050px;
+}
+:root {
+	--spray: rgba(123, 225, 239, 1);
+}
+
+.halaman-utama #info .isi-info .infopendaftaran .inpendaftaran {
+	color: rgba(33, 69, 81, 1);
+	font-size: 32px;
+	font-family: "Roboto Slab", serif;
+	float: left;
+	margin-left: 100px;
+	margin-top: -100px;
+	font-size: 40px;
+}
+.halaman-utama #info .isi-info .back {
+	background-color: var(--bittersweettt);
+	border-radius: 5px;
+	height: 350px;
+	width: 1280px;
+	margin-left: 25px;
+}
+:root {
+	--bittersweettt: rgba(241, 255, 152, 1);
+}
+.halaman-utama #info .isi-info .back .isigan {
+	color: rgba(33, 69, 81, 1);
+}
+.halaman-utama #info .isi-info .back .isigan .isiganheader {
+	font-family: "Roboto Slab", Helvetica;
+	text-decoration: underline;
+	margin-bottom: 30px;
+	margin-top: 250px;
+	margin-left: 40px;
+	font-size: 25px;
+}
+.halaman-utama #info .isi-info .back .isigan .teksheaderisi {
+	font-family: "Roboto Slab", Helvetica;
+	margin-left: 20px;
+	font-size: 20px;
+}
+.halaman-utama #info .isi-info .gambarinfo {
+	margin-left: 900px;
+}
+
+.halaman-utama .footer .backgroundfooter {
+	background-color: var(--footer);
+	border-radius: 5px;
+	height: 350px;
+	width: 1440px;
+	margin-top: 150px;
+	margin-left: 0px;
+}
+:root {
+	--footer: rgba(173, 216, 222, 1);
+}
+.halaman-utama .footer .backgroundfooter .hubungi {
+	color: rgba(33, 69, 81, 1);
+	font-size: 32px;
+	font-family: "Roboto Slab", serif;
+	margin-left: 60px;
+	padding-top: 20px;
+}
+.halaman-utama .footer .backgroundfooter .telephone {
+	margin-top: 40px;
+	margin-left: 80px;
+	position: absolute;
+}
+
+.halaman-utama .footer .backgroundfooter .nohp1 {
+	margin-left: 130px;
+	position: absolute;
+	margin-top: 35px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman-utama .footer .backgroundfooter .nohp2 {
+	margin-left: 130px;
+	position: absolute;
+	margin-top: 55px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman-utama .footer .backgroundfooter .whattsap {
+	margin-left: 440px;
+	position: absolute;
+	margin-top: 35px;
+}
+.halaman-utama .footer .backgroundfooter .nowaa {
+	margin-left: 490px;
+	position: absolute;
+	margin-top: 45px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman-utama .footer .backgroundfooter .facebook {
+	margin-left: 440px;
+	position: absolute;
+	margin-top: 80px;
+}
+.halaman-utama .footer .backgroundfooter .facebookteks {
+	margin-left: 490px;
+	position: absolute;
+	margin-top: 90px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman-utama .footer .backgroundfooter .igg {
+	margin-left: 440px;
+	position: absolute;
+	margin-top: 125px;
+}
+.halaman-utama .footer .backgroundfooter .igid {
+	margin-left: 490px;
+	position: absolute;
+	margin-top: 135px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+.halaman-utama .footer .backgroundfooter .location {
+	margin-left: 810px;
+	position: absolute;
+	margin-top: 40px;
+}
+
+.halaman-utama .footer .backgroundfooter .locationid {
+	margin-left: 850px;
+	position: absolute;
+	margin-top: 40px;
+	color: rgba(33, 69, 81, 1);
+	font-size: 20px;
+}
+/* mengatur responsive */
